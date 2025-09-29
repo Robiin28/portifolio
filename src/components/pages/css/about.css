@@ -1,0 +1,186 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,800;1,900&display=swap");
+
+.heading {
+    font-size: 26px;
+    color: var(--primaryColor);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.heat{
+    font-size: 30px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    text-align: center;
+}
+.container .about-text {
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    padding: 48px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(14, 14, 13, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    margin-bottom: 20px;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+}
+
+.container .about-text:hover {
+    transform: scale(1.05); 
+    
+    box-shadow: 0 6px 12px rgba(240, 239, 234, 0.2);
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+
+.emphasis {
+    font-weight: 600;
+    color: #333;
+}
+
+.Cv {
+    margin: 50px auto;
+    display: flex;
+    width: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.Cv:hover {
+    background-color: var(--primaryColor);
+    transform: scale(1.05);
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill .box {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(233, 233, 223, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.skill .box svg {
+    color: var(--primaryColor);
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+}
+.skill .box svg:hover{
+  transform: scale(1.5);
+}
+
+.skill .box h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.skill .box p {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+
+.skill .box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(252, 252, 252, 0.2);
+}
+
+.skill .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dot{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .last{
+    margin-bottom: 80px;
+  }
+  .last2{
+    margin-bottom: 80px;
+  }
+.first{
+    margin-top: 30px;
+}
+.col{
+    color:var(--primaryColor);
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .last2{
+        margin-bottom: 0;
+    }
+    .heat{
+        font-size: 20px;
+    }
+    
+    .Cv {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .container .about-text {
+        font-size: 12px;    
+    }
+    
+    .skill .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .highlight {
+        font-size: 15px;
+    }
+    
+    .emphasis {
+        font-weight: 500;
+    }
+    
+    .skill .box svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .skill .box h3 {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .skill .box p {
+       display: none;
+    }
+}

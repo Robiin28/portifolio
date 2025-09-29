@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primaryBackground: #2c1e0c;
+  --primaryColor: #e0a80d;
+  --headingColor: #1e0c05;
+  --white: #fff;
+  --black: #000;
+  
+}
+a {
+  color: var(--greyDark);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: var(--primaryColor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.flexsb {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 17px;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  padding: 15px 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin:auto 20px;
+}
+button:hover {
+ background-color: rgb(13, 158, 225);
+ color:var(--white);
+}
+
+@media (max-width: 768px) {
+.container{
+  margin-bottom: 30px;
+}
+}
+
+

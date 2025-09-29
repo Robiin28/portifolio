@@ -1,0 +1,52 @@
+.blog {
+    font-family: Arial, sans-serif;
+  }
+  
+  .blog h3 {
+    color: var(--primaryColor);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog label {
+    color: #bb8a9c;
+    font-size: 1rem;
+  }
+  
+  .blog p {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 100;
+  }
+  
+  @media (max-width: 768px) {
+    .blog .img img {
+      max-width: 95%;
+    }
+  
+    .blog h3 {
+      font-size: 1.2rem;
+    }
+  
+    .blog label {
+      font-size: 0.8rem;
+    }
+  
+    .blog p {
+      font-size: 1rem;
+    }
+  }
+  
+  .blog .box {
+    transition: transform 0.3s, box-shadow 0.3s; 
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:25px;
+  }
+  
+  .blog .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(250, 245, 245, 0.2);
+  }
+  

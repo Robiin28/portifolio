@@ -1,0 +1,90 @@
+
+.flexsb {
+    display:flex;
+    justify-content: flex-end;
+       }
+header {
+    position:absolute;
+    background-color: rgb(15, 1, 1);
+    height: 10vh;
+    line-height: 10vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;  
+  }
+header nav{
+   text-align: end;
+   position:absolute;
+  }
+header a {
+    color:var(--greyDark);
+    text-decoration: none;
+    transition:0.5;
+    padding:10px;
+    margin-left: 20px;
+  }
+header a:hover{
+    background-color:none;
+    border-radius: 20px;
+    border:2px solid var(--primaryColor);
+  }
+.toggle {
+    position:absolute;
+    right:0;
+    top:3px;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+  }
+.toggle:hover{
+  background-color: none;
+}
+.navHide{
+    position:absolute;
+    top:5vh;
+    left:0;
+    margin: 10px auto;;
+    width:100%;
+    background-color:rgb(15, 1, 1) ;
+    padding-right: 20px;
+    display:block;
+}
+.navHide a{
+    padding-left: 20px;
+}
+.icon34{
+  width:20px;
+  height:20px;
+  margin-top: 5px;
+}
+  /*  */
+  @media screen and (max-width:768px){
+    header .nav{
+        display:none
+    }
+    header a{
+        width:100%;
+        display:block;
+        color:var(--white);
+    }
+    .toggle{
+        display:block;
+        background:none;
+        font-size: 25px;
+        
+    }
+  }
+.dark-mode {
+    background-color:var(--primaryBackground);
+    color: #ffffff;
+}
+
+.dark-mode .nav a {
+    color: #ffffff;
+}
+
+.dark-mode .icon {
+    color: #ffffff;
+}

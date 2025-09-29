@@ -1,0 +1,140 @@
+.contact {
+    padding: 2rem;
+    background-image: url('./../../data/image/mines.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width:80%; 
+    margin: auto;
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../data/image/mines.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(8px) grayscale(100%) brightness(44%);
+    background-color: transparent;
+    z-index: 0;
+   
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative; 
+    z-index: 1;
+    color: white; 
+    border-radius: 10px;
+    
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact .left {
+    flex: 1;
+    max-width: 45%;
+    min-width: 300px; 
+}
+
+.contact .right {
+    flex: 1;
+    max-width: 45%; 
+    min-width: 300px; 
+}
+
+.contact .left .box {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact .left .box i {
+    font-size: 2rem;
+    color: var(--primaryColor);
+    margin-bottom: 0.5rem;
+}
+
+.contact .left .box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color:var(--headingColor);
+}
+
+.contact .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.contact .right .flex {
+    display: flex;
+    gap: 1rem; 
+}
+
+.contact .right input[type="text"],
+.contact .right input[type="email"],
+.contact .right input[type="tel"],
+.contact .right textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.contact .right input:focus,
+.contact .right textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.bot{
+    height:50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin:0 auto;
+}
+
+@media (max-width: 768px) {
+    .contact .content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contact .left,
+    .contact .right {
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact .left{
+        margin:auto;
+    }
+
+    .contact .right {
+        padding: 0;
+    }
+
+    .contact .box {
+        width: 80%; 
+        margin-bottom: 1rem;
+    }
+}

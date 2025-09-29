@@ -1,0 +1,142 @@
+
+.flexsb {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header {
+    position: absolute;
+    background-color: transparent;
+    height: 10vh;
+    line-height: 10vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  header nav {
+    text-align: end;
+    position: absolute;
+  }
+  
+  header a {
+    color: var(--greyDark);
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  
+  header a:hover {
+    background-color: none;
+    border-radius: 20px;
+    border: 2px solid var(--primaryColor);
+  }
+  
+  .toggle {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+  }
+  
+  .toggle:hover {
+    background-color: none;
+  }
+  
+  .navHide {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    margin: 10px auto;
+    width: 100%;
+    background-color: rgb(15, 1, 1);
+    padding-right: 20px;
+    display: block;
+  }
+  
+  .navHide a {
+    padding-left: 20px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    header .nav {
+        display: none;
+    }
+  
+    header a {
+        width: 100%;
+        display: block;
+        color: var(--white);
+    }
+  
+    .toggle {
+        display: block;
+        background: none;
+        font-size: 25px;
+    }
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    --background-color: #222;
+    --text-color: #fff;
+    --greyDark: #ddd;
+    --primaryColor: #4caf50;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  body.dark-mode header {
+    background-color: #333;
+  }
+  
+  body.dark-mode header a {
+    color: var(--text-color);
+  }
+  
+  body.dark-mode .navHide {
+    background-color: #444;
+  }
+  
+  /* Bright mode styles (default) */
+  body.bright-mode {
+    --background-color: #fff;
+    --text-color: #333;
+    --greyDark: #333;
+    --primaryColor: #007BFF;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  body.bright-mode header {
+    background-color: #f8f9fa;
+  }
+  
+  body.bright-mode header a {
+    color: var(--text-color);
+  }
+  
+  body.bright-mode .navHide {
+    background-color: #fff;
+  }
+  
+  
+  .theme-toggle {
+    position: absolute;
+    background-color: transparent;
+    left: 5px;
+    top: 3px;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+  .theme-toggle .icon {
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  

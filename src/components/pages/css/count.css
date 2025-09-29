@@ -1,0 +1,60 @@
+.counter {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; 
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.boxn {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(231, 235, 25, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.boxn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(252, 235, 4, 0.2);
+}
+
+.boxn .countHead {
+  font-size: 20px;
+}
+
+.boxn .countNumber {
+  font-size: 22px;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .boxn {
+    padding: 10px; 
+  }
+
+  .boxn .countHead {
+    font-size: 16px; 
+  }
+
+  .boxn .countNumber {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .counter {
+    margin-bottom: 60px;
+  }
+}
