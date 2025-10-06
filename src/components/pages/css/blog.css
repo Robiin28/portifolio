@@ -1,52 +1,94 @@
 .blog {
-    font-family: Arial, sans-serif;
-  }
-  
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.blog h3 {
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.blog label {
+  color: #bb8a9c;
+  font-size: 1rem;
+}
+
+.blog p {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+/* === Responsive Grid === */
+.blog .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.blog .box {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(250, 245, 245, 0.2);
+}
+
+.blog .img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.blog .img img:hover {
+  transform: scale(1.1);
+}
+
+/* === Responsive Text === */
+@media (max-width: 992px) {
   .blog h3 {
-    color: var(--primaryColor);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
   }
-  
+
   .blog label {
-    color: #bb8a9c;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
+
   .blog p {
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--white);
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 100;
+    font-size: 0.95rem;
   }
-  
-  @media (max-width: 768px) {
-    .blog .img img {
-      max-width: 95%;
-    }
-  
-    .blog h3 {
-      font-size: 1.2rem;
-    }
-  
-    .blog label {
-      font-size: 0.8rem;
-    }
-  
-    .blog p {
-      font-size: 1rem;
-    }
+}
+
+@media (max-width: 600px) {
+  .blog {
+    padding: 20px;
   }
-  
+
   .blog .box {
-    transition: transform 0.3s, box-shadow 0.3s; 
-    background-color: rgba(0, 0, 0, 0.1);
-    padding:25px;
+    padding: 18px;
   }
-  
-  .blog .box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(250, 245, 245, 0.2);
+
+  .blog h3 {
+    font-size: 1.1rem;
   }
-  
+
+  .blog p {
+    font-size: 0.9rem;
+  }
+}
