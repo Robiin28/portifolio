@@ -95,7 +95,19 @@ const portfolioData = [
       "🎨 Full design and partial backend completed, system works but still needs refinement.",
     video: "/tour_guide.mp4"
   },
-
+  {
+    id: 6,
+    cover: image6,
+    title: "ASAX_COMPANY",
+    name: "Ecommerce Fullstack",
+    category: "Fullstack",
+    description:
+      "Test project given for internship entrance, its Fullstack website for chemical industry. Robust backend, UI design still needs adjustments.",
+    link: "",
+    note:
+      "🎨 i have Developed this 1 year ago; robust backend design and it give me solid foundation for my future projects.",
+    video: "/asax.mp4"
+  }
 ];
 
 const allCategories = [
