@@ -43,7 +43,7 @@ return(
                                 <div className="box">
                                     <SiNodedotjs size={60} color="#339933" />
                                     <h3 className="col">Node.js</h3>
-                                    <p>Expert in building fast and scalable backend services using Node.js.</p>
+                                    <p>comfortable in building fast and scalable backend services using Node.js.</p>
                                 </div>
                                 <div className="box">
                                     <SiExpress size={60} color="#000000" style={{ backgroundColor: "white", borderRadius: "50%" }} />

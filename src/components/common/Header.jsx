@@ -32,12 +32,7 @@ export const Header = () => {
                         <button className="toggle" onClick={() => setResponse(!response)}>
                             <Menu className='icon' />
                         </button>
-                        <button 
-                            className="theme-toggle" 
-                            onClick={() => setIsDarkMode(!isDarkMode)}
-                        >
-                            {isDarkMode ? <Brightness7 className='icon34' /> : <Brightness4 className='icon34' />}
-                        </button>
+                       
                     </div>
                 </div>
             </header>

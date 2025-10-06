@@ -1,9 +1,11 @@
 import React from "react";
 import { 
-    Facebook, 
+    Telegram, 
     Twitter,
-    Instagram, 
-    YouTube } from "@mui/icons-material";
+    Instagram,
+    LinkedIn, 
+    YouTube 
+} from "@mui/icons-material";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -11,13 +13,31 @@ export const Footer = () => {
     <footer>
       <div className="social-icons">
         <i data-aos="zoom-in">
-          <Facebook />
+          <a
+            href="https://t.me/Robin1228a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Telegram />
+          </a>
         </i>
         <i data-aos="zoom-in">
-          <Twitter />
+          <a
+            href="https://www.linkedin.com/in/mr-robel-hailu-854143239/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedIn />
+          </a>
         </i>
         <i data-aos="zoom-in">
-          <Instagram />
+          <a
+            href="https://www.instagram.com/rob__ril?igsh=d3AycGR3amxjeDQ2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </a>
         </i>
         <i data-aos="zoom-in">
           <YouTube />

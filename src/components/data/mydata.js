@@ -1,183 +1,152 @@
 import { 
-  Settings, 
-  CropRotate, ViewInAr,
-  PieChart, Code, BarChart, 
-  CloudOutlined, FavoriteBorder, Public,
-  PersonOutlined, AddLocationAltOutlined, 
-  PhoneIphone, EmailOutlined, Facebook,
-  Twitter, Instagram, YouTube } 
-from "@mui/icons-material"
+  Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, 
+  CloudOutlined, FavoriteBorder, Public, PersonOutlined, 
+  AddLocationAltOutlined, PhoneIphone, EmailOutlined, 
+  Facebook, Twitter, Instagram, YouTube 
+} from "@mui/icons-material";
 
-export const home = [
-  
-]
-export const about = [
- 
-]
+// Home section (can add content later)
+export const home = [];
+
+// About section (can add content later)
+export const about = [];
+
+// Services offered
 export const services = [
   {
     id: 1,
     icon: <Settings />,
     title: "Creative Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    desc: "We create visually stunning and user-friendly designs tailored to your brand and audience.",
   },
   {
     id: 2,
     icon: <CropRotate />,
     title: "Clean Code",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    desc: "Our code is structured, maintainable, and optimized for performance and scalability.",
   },
   {
     id: 3,
     icon: <ViewInAr />,
     title: "Responsive Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    desc: "Websites and applications that look great and function perfectly on any device.",
   },
   {
     id: 4,
     icon: <PieChart />,
-    title: "Material UI	",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    title: "Material UI",
+    desc: "Leveraging Material UI for modern, consistent, and accessible user interfaces.",
   },
   {
     id: 5,
     icon: <Code />,
     title: "Material UI Icons",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    desc: "Clean and visually appealing iconography for better user experience.",
   },
   {
     id: 6,
     icon: <BarChart />,
     title: "Awesome Support",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    desc: "Reliable and responsive support to ensure your projects run smoothly.",
   },
-]
+];
+
+// Project stats
 export const project = [
-  {
-    id: 1,
-    icon: <CloudOutlined />,
-    num: "89",
-    title: "HAPPY CLIENTS",
-  },
-  {
-    id: 2,
-    icon: <FavoriteBorder />,
-    num: "231",
-    title: "PROJECTS COMPLEATED",
-  },
-  {
-    id: 3,
-    icon: <Public />,
-    num: "108",
-    title: "FILES DOWNLOADED",
-  },
-  {
-    id: 4,
-    icon: <PersonOutlined />,
-    num: "1446",
-    title: "LIENS OF CODE",
-  },
-]
+  { id: 1, icon: <CloudOutlined />, num: "89", title: "Happy Clients" },
+  { id: 2, icon: <FavoriteBorder />, num: "231", title: "Projects Completed" },
+  { id: 3, icon: <Public />, num: "108", title: "Files Downloaded" },
+  { id: 4, icon: <PersonOutlined />, num: "1446", title: "Lines of Code" },
+];
+
+// Portfolio items
 export const portfolio = [
-  {
-    id: 1,
-    cover: "../images/port/port1.jpg",
-    name: "Brand",
-    category: "frontend",
-    title: "Brex Logo",
-  },
-  {
-    id: 2,
-    cover: "../images/port/port2.jpg",
-    name: "Brand",
-    category: "fullstack website",
-    title: "Brex Logo",
-  },
-  {
-    id: 3,
-    cover: "../images/port/port3.jpg",
-    name: "Brand",
-    category: "Application",
-    title: "Brex Logo",
-  }
-]
+  { id: 1, cover: "../images/port/port1.jpg", name: "Brand", category: "Frontend", title: "Brex Logo" },
+  { id: 2, cover: "../images/port/port2.jpg", name: "Brand", category: "Fullstack Website", title: "Brex Logo" },
+  { id: 3, cover: "../images/port/port3.jpg", name: "Brand", category: "Application", title: "Brex Logo" },
+];
+
+// Testimonials
 export const testimonials = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "Excellent developer with great attention to detail. Delivered projects on time with high quality.",
     image: "./images/testimonials/team-1.png",
     name: "Alamin Musa",
     post: "Front End Developer",
   },
   {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "Very professional and skilled. Great communication and coding expertise.",
     image: "./images/testimonials/team-2.png",
     name: "Alex Ander",
     post: "Back End Developer",
   },
   {
     id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "Creative problem solver and a talented React developer. Highly recommended.",
     image: "./images/testimonials/team-3.png",
     name: "GorkCoder",
     post: "React Developer",
   },
-]
+];
+
+// Blog posts
 export const blog = [
   {
     id: 1,
-    title: "Master These Awesome",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b1.png",
+    title: "Master These Awesome Frontend Techniques on my website",
+    date: "march 6, 2025",
+    author: "Robel Hailu",
+    desc: "Learn modern frontend practices, tips for responsive layouts, and how to improve user experience in your web applications.",
+    cover: "./image/koloTemari.png",
   },
   {
     id: 2,
-    title: "Best Design Items to Appeal",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
+    title: "Boost Your Fullstack Projects",
+    date: "Sep 15, 2025",
+    author: "Robel Hailu",
+    desc: "Explore strategies for building scalable fullstack apps, including backend architecture, database design, and API integrations.",
     cover: "./images/blog/b2.png",
   },
   {
     id: 3,
-    title: "The 20 Best Lightroom Presets",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
+    title: "Design Principles Every Developer Should Know",
+    date: "Aug 20, 2025",
+    author: "Robel Hailu",
+    desc: "Understand key design concepts, color theory, and layout principles to make your projects visually appealing and user-friendly.",
     cover: "./images/blog/b3.png",
   },
-]
+  {
+    id: 4,
+    title: "Using AI to Personalize Web Applications",
+    date: "Jul 10, 2025",
+    author: "Robel Hailu",
+    desc: "Implement AI and machine learning techniques to provide smarter user experiences, like recommendation engines and dynamic content.",
+    cover: "./images/blog/b4.png",
+  },
+  {
+    id: 5,
+    title: "Optimizing Website Performance",
+    date: "Jun 5, 2025",
+    author: "Robel Hailu",
+    desc: "Learn techniques to improve website speed, SEO, and responsiveness for better engagement and retention.",
+    cover: "./images/blog/b5.png",
+  }
+];
+
+
+// Contact info
 export const contact = [
-  {
-    icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
-  },
-  {
-    icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
-  },
-  {
-    icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
-  },
-]
+  { icon: <AddLocationAltOutlined />, text1: "2651 Main Street, Suite 124", text2: "Seattle, WA, 98101" },
+  { icon: <PhoneIphone />, text1: "0123456789", text2: "0345627891" },
+  { icon: <EmailOutlined />, text1: "hello@thetheme.io", text2: "info@brex-theme.io" },
+];
+
+// Social links
 export const social = [
-  {
-    icon: <Facebook />,
-  },
-  {
-    icon: <Twitter />,
-  },
-  {
-    icon: <Instagram />,
-  },
-  {
-    icon: <YouTube />,
-  },
-]
+  { icon: <Facebook /> },
+  { icon: <Twitter /> },
+  { icon: <Instagram /> },
+  { icon: <YouTube /> },
+];

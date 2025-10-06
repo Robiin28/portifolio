@@ -3,51 +3,48 @@ import './css/blog.css';
 import image3 from './../data/image/download3.jpg';
 import image4 from './../data/image/download4.jpg';
 const blogData = [
-  {
-    id: 1,
-    cover: image3,
-    title: "Exploring the Beauty of Nature",
-    author: "Jane Doe",
-    date: "July 1, 2024",
-    desc: "Discover the most breathtaking places to visit and the joys of spending time in nature. From towering mountains to serene beaches, the natural world offers endless opportunities for exploration and relaxation.",
-    international: true 
-  },
+ 
+ {
+  id: 1,
+  title: "First-Time Payment Gateway & OAuth Integration",
+  date: "Sep 29, 2025", // assuming today is Oct 6, 2025
+  author: "Robel Hailu",
+  desc: "Successfully integrated a payment gateway along with Google and GitHub OAuth authentication for my fullstack project. Learned how to securely handle payments and third-party logins.",
+  cover: "/image/oauths.png",
+},
   {
     id: 2,
-    cover: image4, 
-    title: "Tech Trends of 2024",
-    author: "John Smith",
-    date: "June 28, 2024",
-    desc: "An overview of the latest advancements in technology and what to expect in the coming year. We delve into AI, blockchain, and the latest in consumer electronics to see how they will shape the future.",
-    international: true 
+    title: "Master These Awesome Frontend Techniques on my website",
+    date: "march 6, 2025",
+    author: "Robel Hailu",
+    desc: "Learn modern frontend practices, tips for responsive layouts, and how to improve user experience in your web applications.",
+    cover: "/image/blog1.png",
   },
-  {
-    id: 3,
-    cover: "https://via.placeholder.com/600x400?text=Ethiopian+Developers",
-    title: "Ethiopian Developers and Innovations",
-    author: "Ethiopian Developer",
-    date: "June 25, 2024",
-    desc: "Highlighting the achievements and innovations of Ethiopian developers in various fields. Explore how local talents are making a global impact.",
-    international: false 
-  },
-  {
-    id: 4,
-    cover: "https://via.placeholder.com/600x400?text=Challenges+and+Opportunities",
-    title: "Challenges and Opportunities for Developers in Ethiopia",
-    author: "Ethiopian Developer",
-    date: "June 20, 2024",
-    desc: "Examining the challenges faced by developers in Ethiopia and the emerging opportunities in the tech sector. Learn how local developers are overcoming obstacles to drive innovation.",
-    international: false 
-  },
-  {
-    id: 5,
-    cover: "https://via.placeholder.com/600x400?text=Tech+Education+Initiatives",
-    title: "Impact of Tech Education Initiatives in Ethiopia",
-    author: "Ethiopian Developer",
-    date: "June 15, 2024",
-    desc: "Discussing the impact of educational initiatives on tech literacy and skill development in Ethiopia. Discover how these programs are shaping the future of the country's tech ecosystem.",
-    international: false 
-  }
+ {
+  id: 3,
+  title: "My First Backend Deployment on Render",
+  date: "Sep 15, 2025",
+  author: "Robel Hailu",
+  desc: "Sharing my experience deploying my first backend on Render. I cover setup, environment variables, database connections, and lessons learned from real deployment challenges.",
+  cover: "image/backend.png",
+},
+ {
+  id: 4,
+  title: "Top Tech Trends in 2025",
+  date: "Aug 20, 2025",
+  author: "Robel Hailu",
+  desc: "Stay updated with the latest technology trends shaping the industry this year, including AI advancements, cloud solutions, and fullstack development innovations.",
+  cover: "/image/download4.jpg",
+},
+
+ {
+  id: 3,
+  title: "Arbaminch University Tech Club Launch",
+  date: "Mar 6, 2025", // 7 months ago
+  author: "Robel Hailu",
+  desc: "Exciting news! Arbaminch University is launching its first tech club to inspire the next generation of innovators. We’re thrilled to see students engaging with technology and building skills for the future.",
+  cover: "/image/amu.png",
+}
 ];
 
 export const Blog = () => {

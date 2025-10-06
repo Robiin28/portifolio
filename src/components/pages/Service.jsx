@@ -27,54 +27,49 @@ export const Service = () => {
         <>
         <section className="service">
             <div className="container">
-            <h2 className='heading ' data-aos='zoom-in-down'>
-                        Services
-                    </h2>
+                <h2 className='heading' data-aos='zoom-in-down'>
+                    Services
+                </h2>
                 <Slider {...settings}>
                     <div className="box">
                         <i><Settings /></i>
-                        <h2>Creating UI/UX Design</h2>
-                        <p>Crafting intuitive and engaging user interfaces with a focus on user experience.</p>
+                        <h2>UI/UX Design</h2>
+                        <p>Designing intuitive and visually engaging interfaces for websites and apps.</p>
                     </div>
                     <div className="box">
                         <i><ViewInAr /></i>
                         <h2>Responsive Web Design</h2>
-                        <p>Building websites that look and work great on all devices and screen sizes.</p>
+                        <p>Creating websites that look great on all devices and screen sizes.</p>
                     </div>
                     <div className="box">
                         <i><PieChart /></i>
-                        <h2>Creating Apps for Android and iOS</h2>
-                        <p>Developing robust mobile applications tailored to your needs on both platforms.</p>
+                        <h2>Mobile App Development</h2>
+                        <p>Building Android and iOS apps with a focus on performance and user experience.</p>
                     </div>
                     <div className="box">
                         <i><Code /></i>
-                        <h2>Web Development</h2>
-                        <p>Writing clean and maintainable code to build dynamic and interactive web applications.</p>
+                        <h2>Frontend Development</h2>
+                        <p>Writing clean, interactive, and maintainable code for modern web applications.</p>
                     </div>
                     <div className="box">
                         <i><BarChart /></i>
-                        <h2>Data Analysis</h2>
-                        <p>Analyzing and visualizing data to drive informed decision-making processes.</p>
+                        <h2>Backend Development</h2>
+                        <p>Developing robust and scalable server-side logic and APIs for web and mobile apps.</p>
                     </div>
                     <div className="box">
                         <i><CloudOutlined /></i>
-                        <h2>Cloud Services</h2>
-                        <p>Implementing scalable cloud solutions to enhance your business operations.</p>
+                        <h2>Cloud & DevOps</h2>
+                        <p>Deploying scalable applications and managing cloud infrastructure efficiently.</p>
                     </div>
                     <div className="box">
                         <i><Public /></i>
-                        <h2>SEO Optimization</h2>
-                        <p>Optimizing your website to rank higher in search engine results and attract more visitors.</p>
-                    </div>
-                    <div className="box">
-                        <i><AddLocationAltOutlined /></i>
-                        <h2>Location-Based Services</h2>
-                        <p>Integrating geo-location features to provide personalized user experiences.</p>
+                        <h2>SEO & Optimization</h2>
+                        <p>Optimizing websites for search engines to improve visibility and traffic.</p>
                     </div>
                 </Slider>
             </div>
-            
         </section>
+
         <div className="container dot">
            <div className="count">
                 <Count className="counterService" />

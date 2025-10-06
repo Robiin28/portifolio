@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <style>
+    body { display:flex; justify-content:center; align-items:center; height:100vh; margin:0; background:#000; }
+    video { max-width:90%; max-height:90%; }
+  </style>
+</head>
+<body>
+  <video controls>
+    <source src="" id="videoSrc" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const video = params.get('v');
+    if(video) document.getElementById('videoSrc').src = video;
+  </script>
+</body>
+</html>
