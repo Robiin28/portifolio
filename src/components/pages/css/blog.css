@@ -19,18 +19,42 @@
 /* === Blog Grid === */
 .blog .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 20px;
-  justify-items: center; /* keeps boxes centered even when fewer fit per row */
+  justify-items: center;
+
+  /* Large screens: 4 columns */
+  grid-template-columns: repeat(4, 1fr);
 }
 
+/* Medium-large screens: 3 columns */
+@media (max-width: 1200px) {
+  .blog .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets / small laptops: 2 columns */
+@media (max-width: 992px) {
+  .blog .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile screens: 1 column */
+@media (max-width: 600px) {
+  .blog .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Blog Box === */
 .blog .box {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 380px; /* keeps a nice consistent width */
+  max-width: 380px;
   width: 100%;
   box-sizing: border-box;
 }
