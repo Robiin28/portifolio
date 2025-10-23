@@ -26,7 +26,7 @@ const portfolioData = [
       "currently on development but functional learning platform with digital courses, quizzes, and resources.",
     link: "https://frontend-kolotemari.vercel.app/",
     note:
-      "⚡ On board & live! Features courses, quizzes and resources, Admin & instructor panels fully integrated, Built with React & Node.js",
+      "⚡ On Development & live! Features courses, quizzes and resources, Admin & instructor panels are currently on design, Built with React & Node.js",
     video: ""
   },
   {
@@ -39,7 +39,7 @@ const portfolioData = [
       "AI-powered news feed for the university with real-time updates.",
     link: "",
     note:
-      "🤖 On board! Designed with a team, Includes smart news recommendation features, Deployed version in progress",
+      "🤖 On board! Designed with a team, Includes smart news recommendation features, Deployed version in progress ,built with React ,node and flusk for machine learning",
     video: "/amu-demo.mp4"
   },
   {
@@ -51,7 +51,7 @@ const portfolioData = [
     description: "Real-world website for a dental clinic, fully functional and sold.",
     link: "https://chinadentalspecialclinic.com/",
     note:
-      "🦷 SOLD & live! Manage patient info and appointments, Built responsive and clean frontend design",
+      "🦷 SOLD & live! Manage patient info and appointments, Built responsive and clean frontend design, built with React and node",
     video: ""
   },
 
@@ -65,7 +65,7 @@ const portfolioData = [
       "Test project given for internship entrance, its Fullstack website for chemical industry. Robust backend, UI design still needs adjustments.",
     link: "",
     note:
-      "🎨 i have Developed this 1 year ago; robust backend design and it give me solid foundation for my future projects.",
+      "🎨 i have Developed this 1 year ago; robust backend design and it give me solid foundation for my future projects.built with HTML and PHP backend",
     video: "/asax.mp4"
   },
 
@@ -79,7 +79,7 @@ const portfolioData = [
       "A simple design-focused project built to learn layout and component structure. The design was inspired by a YouTube tutorial and served as my first frontend project.",
     link: "https://nike-tau-lake.vercel.app/",
     note:
-      "🎨 Easy starter project — helped me understand basic web layout and styling concepts.",
+      "🎨 Easy starter project — helped me understand basic web layout and styling concepts. built with React (simple project)",
     video: ""
   },
   {
@@ -92,7 +92,7 @@ const portfolioData = [
       "A fullstack but design-focused project built to guide Tours. System works but still needs refinement.",
     link: "",
     note:
-      "🎨 Full design and partial backend completed, system works but still needs refinement.",
+      "🎨 Full design and partial backend completed, system works but still needs refinement. built with PHP and HTML (first designed website 3 year ago)",
     video: "/tour_guide.mp4"
   }
 ];
