@@ -23,7 +23,7 @@ const portfolioData = [
     name: "Elearning Website",
     category: "Fullstack",
     description:
-      "Fully functional learning platform with digital courses, quizzes, and resources.",
+      "currently on development but functional learning platform with digital courses, quizzes, and resources.",
     link: "https://frontend-kolotemari.vercel.app/",
     note:
       "⚡ On board & live! Features courses, quizzes and resources, Admin & instructor panels fully integrated, Built with React & Node.js",
@@ -48,7 +48,7 @@ const portfolioData = [
     title: "China Dental Clinic Site",
     name: "eHealth for Dentists",
     category: "Fullstack",
-    description: "Real-world website for a dental clinic, fully functional.",
+    description: "Real-world website for a dental clinic, fully functional and sold.",
     link: "https://chinadentalspecialclinic.com/",
     note:
       "🦷 SOLD & live! Manage patient info and appointments, Built responsive and clean frontend design",
