@@ -1,40 +1,38 @@
 .blog {
   font-family: Arial, sans-serif;
   padding: 40px 20px;
+  background-color: #0d0d0d; /* optional dark backdrop */
 }
 
-.blog h3 {
+.blog .container {
+  max-width: 1200px; /* prevents over-stretching on large screens */
+  margin: 0 auto;
+}
+
+.blog h2.heading {
+  text-align: center;
   color: var(--primaryColor);
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.blog label {
-  color: #bb8a9c;
-  font-size: 1rem;
-}
-
-.blog p {
-  font-family: 'Times New Roman', Times, serif;
-  color: var(--white);
-  font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 100;
-}
-
-/* === Responsive Grid === */
+/* === Blog Grid === */
 .blog .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   margin-top: 20px;
+  justify-items: center; /* keeps boxes centered even when fewer fit per row */
 }
 
 .blog .box {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 380px; /* keeps a nice consistent width */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blog .box:hover {
@@ -42,6 +40,7 @@
   box-shadow: 0 6px 12px rgba(250, 245, 245, 0.2);
 }
 
+/* === Image Section === */
 .blog .img {
   width: 100%;
   overflow: hidden;
@@ -54,14 +53,51 @@
   height: auto;
   border-radius: 10px;
   transition: transform 0.4s ease;
+  object-fit: cover;
 }
 
 .blog .img img:hover {
   transform: scale(1.1);
 }
 
-/* === Responsive Text === */
+/* === Text Section === */
+.blog h3 {
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.blog label {
+  color: #bb8a9c;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog p {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+/* === Hover Animation === */
+.blog .box:hover .img img {
+  transform: scale(1.1);
+}
+
+/* === Medium Screens (Tablets) === */
 @media (max-width: 992px) {
+  .blog {
+    padding: 30px 15px;
+  }
+
+  .blog h2.heading {
+    font-size: 1.8rem;
+  }
+
   .blog h3 {
     font-size: 1.2rem;
   }
@@ -75,13 +111,22 @@
   }
 }
 
+/* === Small Screens (Phones) === */
 @media (max-width: 600px) {
   .blog {
     padding: 20px;
   }
 
+  .blog .content {
+    gap: 20px;
+  }
+
   .blog .box {
     padding: 18px;
+  }
+
+  .blog h2.heading {
+    font-size: 1.6rem;
   }
 
   .blog h3 {
